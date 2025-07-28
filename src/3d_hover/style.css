@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(#444, #111);
+}
+
+.wrapper {
+    perspective: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 3rem;
+    gap: 3rem;
+}
+
+.card {
+    perspective: 1000px;
+    width: 300px;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    transition: transform 0.3s ease-out;
+    transform-style: preserve-3d;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.card:nth-child(1) {
+    background-image: url('../img/img_01.jpg');
+}
+
+.card:nth-child(2) {
+    background-image: url('../img/img_02.jpg');
+}
+
+.card:nth-child(3) {
+    background-image: url('../img/img_03.jpg');
+}
+
+.card:nth-child(4) {
+    background-image: url('../img/img_04.jpg');
+}
+
+.card:nth-child(5) {
+    background-image: url('../img/img_05.jpg');
+}
